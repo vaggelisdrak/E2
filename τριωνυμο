@@ -18,7 +18,7 @@ try:
             print("αδυνατη")
     elif a==0 and b!=0:
         x=-c/b
-        print('x = ',x)
+        print('x = %1.2f'%(x))
     elif a==0 and b==0 and c!=0:
         print('Αδύνατη')
     elif a==0 and b==0 and c==0:
