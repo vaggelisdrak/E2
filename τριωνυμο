@@ -1,6 +1,5 @@
 from math import sqrt
 try:
-    print(60*'-')
     value=input("")
     a,b,c=value.split(',')
     a =float(a)
