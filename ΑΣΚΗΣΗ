@@ -5,7 +5,7 @@ while True:
         x1 =float(x1)
         x2 =float(x2)
         if x1>=x2 or n.isdigit()==False or int(n)<0:
-            print('')
+            break
         elif int(n)>0:
             Σ=0
             h=(x2-x1)/int(n)
@@ -16,7 +16,7 @@ while True:
             f1=(-1/6)*(x1-1)*(x1-2)*(x1+2)*(x1-4)
             f2=(-1/6)*(x2-1)*(x2-2)*(x2+2)*(x2-4)
             Ι=(h/2)*(f1+ 2*Σ +f2)
-            print('%1.3f'%(abs(Ι)))
+            print('%1.3f'%(Ι))
         elif int(n)==0:
             break
     except:
