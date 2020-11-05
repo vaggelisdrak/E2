@@ -1,0 +1,23 @@
+while True:
+    try:
+        value=input("γραψε 3 αριθμους x1,x2,n(με κομμα αναμεσα τους): ")
+        x1,x2,n=value.split(',')
+        x1 =float(x1)
+        x2 =float(x2)
+        if x1>=x2 or n.isdigit()==False or n<0:
+            print('error')
+        elif int(n)>0:
+            Σ=0
+            h=(x2-x1)/int(n)
+            for i in range(1,int(n)):
+                x =x1+i*h
+                fx=(-1/6)*(x-1)*(x-2)*(x+2)*(x-4)
+                Σ+=fx
+            f1=(-1/6)*(x1-1)*(x1-2)*(x1+2)*(x1-4)
+            f2=(-1/6)*(x2-1)*(x2-2)*(x2+2)*(x2-4)
+            Ι=(h/2)*(f1+ 2*Σ +f2)
+            print('%1.3f'%(abs(Ι)))
+        elif int(n)==0:
+            break
+    except:
+        print('error')    
