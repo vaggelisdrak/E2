@@ -6,7 +6,6 @@ try:
     b=float(b)
     c =float(c)
     D = b*b - 4*a*c
-    print(60*'-')
     if a!=0:
         if D>0:
             x1 = (-b + sqrt(D))/(2*a)
