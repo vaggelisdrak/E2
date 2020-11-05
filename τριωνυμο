@@ -1,0 +1,35 @@
+from math import sqrt
+while True:
+    try:
+        print(60*'-')
+        value=input("γραψε 3 αριθμους α,β,γ(με κομμα αναμεσα τους): ")
+        a,b,c=value.split(',')
+        a =float(a)
+        b=float(b)
+        c =float(c)
+        D = b*b - 4*a*c
+        print(60*'-')
+        if a!=0:
+            if D>0:
+                print("εχει δυο ανισες λυσεις:")
+                x1 = (-b + sqrt(D))/(2*a)
+                x2 = (-b - sqrt(D))/(2*a)
+                print('x1 = %1.3f'%(x1))
+                print('x2 = %1.3f'%(x2))
+            if D==0:
+                print("εχει μια διπλη λυση: ")
+                x = (-b)/(2*a)
+                print('x = %1.3f'%(x))
+            if D<0:
+                print("αδυνατη")
+        elif a==0 and b!=0:
+            x=-c/b
+            print('εχει μοναδικη λυση:')
+            print('x = ',x)
+        elif a==0 and b==0 and c!=0:
+            print('Αδύνατη')
+        elif a==0 and b==0 and c==0:
+            print('Ταυτότητα')
+    except:
+        print('error')
+        print(60*'-')
