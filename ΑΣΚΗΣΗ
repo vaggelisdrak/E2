@@ -4,7 +4,7 @@ while True:
         x1,x2,n=value.split(',')
         x1 =float(x1)
         x2 =float(x2)
-        if x1>=x2 or n.isdigit()==False or n<0:
+        if x1>=x2 or n.isdigit()==False or int(n)<0:
             print('error')
         elif int(n)>0:
             Σ=0
