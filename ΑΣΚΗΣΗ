@@ -1,6 +1,6 @@
 while True:
     try:
-        value=input("γραψε 3 αριθμους x1,x2,n(με κομμα αναμεσα τους): ")
+        value=input("")
         x1,x2,n=value.split(', ')
         x1 =float(x1)
         x2 =float(x2)
