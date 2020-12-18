@@ -1,0 +1,10 @@
+running = True
+while running:
+    print('')
+    a = input('find the unicode number of: ') 
+    if a.isdigit() == False and a.isalpha() == False:
+        print("Wrong!")
+    elif len(a) > 1:
+        print("Wrong!")
+    elif a.isdigit() == True or a.isalpha() == True:
+        print('the unicode code of character', a, 'is', ord(a))
